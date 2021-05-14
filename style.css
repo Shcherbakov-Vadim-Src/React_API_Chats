@@ -1,0 +1,130 @@
+.app {
+    border: 1px solid rgb(204, 197, 197);
+    width: 400px;
+    height: 700px;
+    margin: 0 0 0 150px;
+    overflow-y: scroll;
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.appConteiner {
+    display: flex;
+    flex-direction: row;
+    margin: 80px 0 0 0;
+}
+
+
+.chatConreiner {
+    border: 1px solid rgb(250, 245, 245);
+    width: 380px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chatAvatar {
+    border-radius: 50%;
+    width: 85px;
+    margin: 8px 0 0 20px;
+    height: 85px;
+}
+
+.chatTitle {
+    margin: 15px 0 0 30px;
+    font-weight: 800;
+}
+
+.chatText {
+    margin: 5px 0 0 30px;
+}
+
+.message {
+    border: 1px solid rgba(226, 251, 255, 0.904);
+    width: 530px;
+    height: 430px;
+    margin: 160px 0 0 0px;
+    padding: 20px 0 0 5px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.nameUser, .textUser {
+    margin: 10px 0 0 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nameUser {
+    width: 160px;
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.todayTime {
+    text-align: center;
+    color: grey;
+}
+
+.horisontLine {
+    color: grey;
+    margin: 0 20px 20px 40px;
+}
+
+.userMassege {
+    float: left;
+    background: rgb(94, 184, 236);
+    padding: 15px 15px 15px 5px;
+    border-radius: 1em;
+    position: relative;
+    line-height: 1.5em;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0 10px 30px; 
+    width: 440px;
+}
+
+.userMassege::after, .userMassege::before {
+    content: "";
+    position: absolute;
+    left: 100%;
+    bottom: .5em;
+    width: 1.9em;
+    height: 1.8em;
+    border: .5em solid white;
+    border-radius: 50%;
+    background:white;
+}
+
+.userMassege::before {
+    border-top: none;
+    height: .9em;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    background: rgb(94, 184, 236);
+    border-color: rgb(94, 184, 236);
+    margin-left: -.9em; 
+}
+
+.timeMiniCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.time {
+    text-align: right;
+    /* margin: 15px 0 0 90px; */
+    color: grey;
+    font-size: 16px;
+}
+
+
+  
+
+  
