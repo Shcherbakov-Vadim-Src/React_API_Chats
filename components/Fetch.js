@@ -5,7 +5,8 @@ import { getDataSub } from '../helper/api';
 class Fetch extends PureComponent {
     state = {
         chats: [],
-        chatsMassages: []
+        chatsMassages: [],
+        count: ''
     }
 
     componentDidMount() {
@@ -16,7 +17,7 @@ class Fetch extends PureComponent {
 
     handleGetId = (chatId) => {
         getDataSub(chatId).then((data) => {
-            this.setState({ chatsMassages: data })
+            this.setState({ chatsMassages: data, count: chatId })
         })
     }
 
@@ -26,7 +27,7 @@ class Fetch extends PureComponent {
                 <div className="app" scrolling="yes">
                     <h2>CHATS</h2>
                     {this.state.chats.map((chat) => {
-                        return <div className="chatConreiner" onClick={() => this.handleGetId(chat.id)}>
+                        return <div className={ this.state.count !== chat.id ? 'chatConteiner': 'chatConteinerSub' } onClick={() => this.handleGetId(chat.id)}>
                             <img src={chat.avatar} className="chatAvatar" />
                             <div>
                                 <div className="timeMiniCont">

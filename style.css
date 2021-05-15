@@ -119,9 +119,17 @@ h2 {
 
 .time {
     text-align: right;
-    /* margin: 15px 0 0 90px; */
     color: grey;
     font-size: 16px;
+}
+
+.chatConteinerSub {
+    background-color: rgb(94, 184, 236);
+    border: 1px solid rgb(250, 245, 245);
+    width: 380px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
 }
 
 
