@@ -21,6 +21,7 @@ class Fetch extends PureComponent {
         })
     }
 
+
     render() {
         return (
             <div className="appConteiner">

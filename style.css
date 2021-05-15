@@ -19,7 +19,7 @@ h2 {
 }
 
 
-.chatConreiner {
+.chatConteiner {
     border: 1px solid rgb(250, 245, 245);
     width: 380px;
     height: 100px;
@@ -86,7 +86,7 @@ h2 {
     line-height: 1.5em;
     display: flex;
     flex-direction: row;
-    margin: 20px 0 10px 30px; 
+    margin: 5px 0 10px 30px; 
     width: 440px;
 }
 
